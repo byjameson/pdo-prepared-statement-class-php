@@ -1,4 +1,4 @@
-This is pdo class for php language. You can make everything with this pdo class. This is easiest and safest class in the world. I wrote it with pure logic. It is free. Created by Gokhan Cava
+This is pdo class for php language. You can make everything with this pdo class. This is easiest and safest class in the world. I wrote it with pure logic. It uses prepared statement and bind param
 
 Connection inside code.
 
