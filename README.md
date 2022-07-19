@@ -4,7 +4,7 @@ Connection inside code.
 
 $connection = new smartSql('root', 'pass', 'databaseUser', 'databaseType(mysql,postgresql,..etc)');
 
-/*
+
 EXAMPLES
 
 //SELECT WITHOUT PDO PING
@@ -55,5 +55,3 @@ echo $row["ad"].'<br>';
 
 }
 
-
-*/
