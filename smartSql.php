@@ -52,8 +52,12 @@ class smartSql {
   }
   public function connect($tryConnect) {
     if($tryConnect==true and !$this->connection->query("SELECT 1")){
-
-      $this->connection = new PDO("$this->database_type:host=$this->host;dbname=$this->database;charset=$charset", $this->user, $this->password);
+      for(;;){
+      $con = $this->connection = new PDO("$this->database_type:host=$this->host;dbname=$this->database;charset=$charset", $this->user, $this->password);
+      if($con==true)
+      break;
+      sleep(1);
+      }
     }
     return $this->connection;
   }
